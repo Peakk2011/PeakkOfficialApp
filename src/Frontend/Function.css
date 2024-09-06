@@ -1,0 +1,137 @@
+
+.Loading {
+    overflow: hidden;
+}
+
+.loadingCon {
+    position: absolute;
+    overflow: hidden;
+}
+
+.loadingCon{
+    overflow: hidden;
+    background-color: #ffffea;
+    height: 100vh;
+    animation: Bgload 1.4s cubic-bezier(0.46, 0, 0.07, 1);
+    z-index: 100;
+}
+
+@keyframes Bgload {
+    0% {
+        background-color: #ffffea; 
+    }
+    50% {
+        background-color: #ffffea;
+    }
+    61% {
+        background-color: #D0D0C4;
+    }
+    100% {
+        background-color: #D0D0C4;
+    }
+}
+
+.loadingImage svg {
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    animation: ZoomAnim 1.7s cubic-bezier(0.55, 0.15, 0.167, 1);
+}
+
+@keyframes ZoomAnim {
+    0% {
+        scale: 80%;
+    }
+    28% {
+        scale: 60%;
+        filter: blur(5px);
+    }
+    42% {
+        scale: 60%;
+        filter: blur(0px);
+    }
+    45% {
+        scale: 80%;
+        filter: blur(0px);
+    }
+    100% {
+        scale: 35000%;
+    }
+}
+
+.context-menu {
+    position: absolute;
+    background: #0c0c0c;
+    border: 1px solid #262626;
+    border-radius: 8px;
+    z-index: 100;
+    width: 265px;
+    display: none;
+    animation: 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) RightClick;
+    height: 415px;
+    scale: 92%;
+}
+
+@media screen and (max-width: 1500px) {
+    .context-menu {
+        scale: 88%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .context-menu {
+        scale: 93% !important;
+    }
+}
+
+@keyframes RightClick {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.context-menu ul {
+    padding: 0px;
+    margin: 0px;
+    /* min-width: 150px; */
+    width: 238px;
+    list-style: none;
+    margin-top: 0rem;
+}
+
+.ContactMenuContent {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.context-menu ul li {
+    padding-bottom: 10px;
+    padding-top: 8px;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    padding-left: 1rem;
+    /* border-bottom: solid 1px #222; */
+}
+
+.context-menu ul li a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.context-menu ul li ion-icon {
+    font-size: 20px;
+    transform: translateY(3px);
+    margin-right: 0.7rem;
+}
+
+.context-menu ul li:hover {
+    background: #161616;
+    border-radius: 4px;
+}

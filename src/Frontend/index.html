@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Peakkofficial</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="Function.css">
+  <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';"> -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+  <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+</head>
+
+<body>
+
+  <div class="tools" id="Dragalbe">
+    <div class="dragableArea"></div>
+  </div>
+
+  <div class="Loading">
+    <div class="loadingCon">
+      <div class="loadingImage">
+        <svg width="1920" height="2160" viewBox="0 0 3840 2160" fill="none" xmlns="http://www.w3.org/2000/svg"
+          id="TransparentLogo">
+          <g clip-path="url(#clip0_0_1)">
+            <path
+              d="M1790.18 858.346C1803.43 857.757 1816.78 864.926 1822.82 875.881L2128.26 1429.39C2137.18 1445.55 2126.65 1462.42 2107.11 1463.29L2067.7 1465.04C2054.48 1465.63 2041.16 1458.5 2035.1 1447.58L1727.53 894.161C1718.54 877.988 1729.06 861.063 1748.64 860.192L1790.18 858.346Z"
+              fill="black" />
+            <path
+              d="M1784.42 876.874C1775.16 876.05 1770.94 866.75 1776.98 860.493L1925.46 706.733C1927.79 704.326 1931.23 702.923 1934.83 702.923L1982.77 702.923C2009.98 702.923 2023.97 730.067 2006.04 748.076L1874.37 880.309C1871.76 882.927 1867.84 884.292 1863.91 883.943L1784.42 876.874Z"
+              fill="black" />
+            <path d="M1703 1447.33V1449.33C1703 1455.96 1708.37 1461.33 1715 1461.33V1461.33" stroke="#FFFFF1"
+              stroke-opacity="0.0627451" stroke-width="8" />
+            <path
+              d="M1763 1302.33C1763 1290.18 1772.85 1280.33 1785 1280.33H1910C1922.15 1280.33 1932 1290.18 1932 1302.33V1338.33C1932 1350.49 1922.15 1360.33 1910 1360.33H1785C1772.85 1360.33 1763 1350.49 1763 1338.33V1302.33Z"
+              fill="black" />
+            <path
+              d="M1778 1411.33C1778 1401.39 1786.06 1393.33 1796 1393.33H1910C1919.94 1393.33 1928 1401.39 1928 1411.33V1439.33C1928 1449.28 1919.94 1457.33 1910 1457.33H1796C1786.06 1457.33 1778 1449.28 1778 1439.33V1411.33Z"
+              fill="black" />
+            <path
+              d="M1708 745.535C1708 733.214 1708 727.053 1710.4 722.347C1712.51 718.208 1715.87 714.842 1720.01 712.733C1724.72 710.335 1730.88 710.335 1743.2 710.335H1764.8C1777.12 710.335 1783.28 710.335 1787.99 712.733C1792.13 714.842 1795.49 718.208 1797.6 722.347C1800 727.053 1800 733.214 1800 745.535V848.135C1800 860.456 1800 866.617 1797.6 871.323C1795.49 875.462 1792.13 878.828 1787.99 880.937C1783.28 883.335 1777.12 883.335 1764.8 883.335H1743.2C1730.88 883.335 1724.72 883.335 1720.01 880.937C1715.87 878.828 1712.51 875.462 1710.4 871.323C1708 866.617 1708 860.456 1708 848.135V745.535Z"
+              fill="black" />
+            <path
+              d="M1707.76 1457.33V860.971H1920.33C1966.73 860.971 2005.17 869.416 2035.65 886.305C2066.12 903.194 2088.93 926.296 2104.08 955.609C2119.22 984.728 2126.79 1017.54 2126.79 1054.03C2126.79 1090.72 2119.12 1123.72 2103.79 1153.04C2088.64 1182.16 2065.74 1205.26 2035.06 1222.34C2004.59 1239.23 1966.25 1247.68 1920.04 1247.68H1773.86V1171.38H1911.89C1941.2 1171.38 1964.98 1166.34 1983.23 1156.24C2001.48 1145.95 2014.87 1131.98 2023.42 1114.31C2031.96 1096.64 2036.23 1076.55 2036.23 1054.03C2036.23 1031.51 2031.96 1011.52 2023.42 994.047C2014.87 976.575 2001.38 962.889 1982.94 952.988C1964.69 943.088 1940.62 938.137 1910.72 938.137H1797.74V1457.33H1707.76Z"
+              fill="black" />
+          </g>
+          <defs>
+            <clipPath id="clip0_0_1">
+              <rect width="466" height="762" fill="white" transform="translate(1687 699)" />
+            </clipPath>
+          </defs>
+        </svg>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="cursor cursor--large"></div>
+  <div class="cursor cursor--small"></div>
+
+  <div id="contextMenu" class="context-menu">
+    <div class="ContactMenuContent">
+      <ul>
+        <li id="FirstLink"><a href="#"><ion-icon name="search-sharp"></ion-icon>Open</a></li>
+        <li><a href="#"><ion-icon name="search-sharp"></ion-icon>Open</a></li>
+        <li><a href="#"><ion-icon name="search-sharp"></ion-icon>Open</a></li>
+        <li><a href="#"><ion-icon name="search-sharp"></ion-icon>Open</a></li>
+        <li><a href="#"><ion-icon name="search-sharp"></ion-icon>Open</a></li>
+        <li><a href="#"><ion-icon name="search-sharp"></ion-icon>Open</a></li>
+        <li><a href="#"><ion-icon name="search-sharp"></ion-icon>Open</a></li>
+        <li><a href="#"><ion-icon name="search-sharp"></ion-icon>Open</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sidebar" id="Sidebar">
+    <div class="sidebarcontent" id="SidebarCon">
+      <div class="Windowstitle">
+        <div class="icon"></div>
+        <p class="win-title">Peakkofficial</p>
+      </div>
+      <div class="sidebarlink">
+        <li><a href="#" id="ActiveNavbar"><ion-icon name="bag-handle-sharp"></ion-icon>Peakk store</a></li>
+        <li><a href="#"><ion-icon name="list-sharp"></ion-icon>Templates</a></li>
+        <li><a href="#"><ion-icon name="information-sharp"></ion-icon>About Peakkofficial</a></li>
+        <li><a href="#"><ion-icon name="document-text-sharp"></ion-icon>Portfolio</a></li>
+        <li><a href="#"><ion-icon name="send-sharp"></ion-icon>Contact Peakkofficial</a></li>
+        <li><a href="#"><ion-icon name="person-sharp"></ion-icon>About This app</a></li>
+        <li><a href="#"><ion-icon name="search-sharp"></ion-icon>Search Peakkofficial</a></li>
+        <li><a href="#"><ion-icon name="help-sharp"></ion-icon>Send Idea Feedback</a></li>
+        <li><a href="#"><ion-icon name="backspace-sharp"></ion-icon>Bugs report</a></li>
+        <li><a href="#"><ion-icon name="settings-sharp"></ion-icon>Settings</a></li>
+        <li><a href="#"><ion-icon name="language-sharp"></ion-icon>Languages</a></li>
+        <li><a href="#" id="CloseApps"><ion-icon name="close-sharp"></ion-icon>Exit This app</a></li>
+      </div>
+    </div>
+  </div>
+
+  <div class="toggleSbar" id="ToggleSidebar" type="change">
+    <div class="toggleSbarCon">
+      <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="45" onclick="this.classList.toggle('active')">
+        <path class="line top"
+          d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+        <path class="line middle" d="m 30,50 h 40" />
+        <path class="line bottom"
+          d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+      </svg>
+    </div>
+  </div>
+
+  <script src="Javascript/renderer.js"></script>
+  <script src="Javascript/Frontend.js"></script>
+</body>
+
+</html>

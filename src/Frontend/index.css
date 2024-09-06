@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.7s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+html {
+  overflow-x: hidden;
+}
+
+html,body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  background-color: rgb(16, 16, 17);
+  backdrop-filter: blur(20px);
+  /* width: 100%; */
+  /* height: 100dvh; */
+}
+
+:where(li,a) {
+  list-style: none;
+  text-decoration: none;
+}
+
+.dragableArea {
+  width: 100%;
+  -webkit-app-region: drag;
+  height: 65px;
+  z-index: 2;
+  margin: 0 auto;
+  position: fixed;
+}
+
+.tools {
+  width: 100%;
+  height: 0px;
+  border-radius: 6px 6px 0px 0px;
+  /* border-bottom: solid 1px #262626; */
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar {
+  width: 280px;
+  height: 100dvh;
+  position: fixed;
+  background-color: #0a0a0a;
+  border-right: solid 1px #262626;
+  z-index: 2;
+  transform: translateX(-300px);
+  opacity: 0;
+  transition: all 0.55s;
+}
+
+.MYDefailt {
+  transform: translateX(0px);
+}
+
+.sidebarcontent {
+  /* margin-top: 4rem; */
+  max-width: 245px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(-100px);
+  opacity: 0;
+  filter: blur(5px);
+}
+
+.SidebarVisible {
+  transform: translateX(0px);
+  opacity: 1;
+  filter: blur(0px);
+}
+
+.Windowstitle {
+  margin: 1rem 0px;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  background: url(./img/PeakkSolid.svg);
+  background-size: cover;
+  background-position: center;
+  float: left;
+  margin: 8px;
+}
+
+.win-title {
+  font-family: Segoe UI;
+  font-size: 20px;
+  display: inline-block;
+  margin: 0;
+  margin-top: 11px;
+  transform: translateX(-8px);
+  color: #fff;
+  user-select: none;
+}
+
+.sidebarlink li a {
+  color: #fff;
+  padding: 0.65rem 1rem;
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 0.65rem;
+}
+
+.sidebarlink li a:hover {
+  background: #161616;
+}
+
+.sidebarlink li a:focus {
+  background-color: #161616; 
+}
+
+#ActiveNavbar {
+  background: #161616;
+  position: relative;
+}
+
+.sidebarlink ion-icon {
+  font-size: 18px;
+  margin-right: 0.65rem;
+  transform: translateY(3px);
+  color: #ffffe9;
+}
+
+#ActiveNavbar ion-icon {
+  font-size: 18px;
+  margin-right: 0.65rem;
+  transform: translateY(1.2px);
+  color: #ffffe9;
+}
+
+#ActiveNavbar::after {
+  content: "";
+  background-color: #ffffe9;
+  width: 4px;
+  height: 19px;
+  border-radius: 20px;
+  left: -1px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.toggleSbar {
+  position: fixed;
+  right: 10px;
+  top: 55px;
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+}
+
+.toggleSbarCon {
+  transform: translate(2px,2px);  
+}
+
+/* hamburger Toggle */
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill:none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke:#ffffe9;
+  stroke-width:5.5;
+  /* stroke-linecap:round; */
+}
+
+.ham8 .top {
+  stroke-dasharray: 40 160;
+}
+.ham8 .middle {
+  stroke-dasharray: 40 142;
+  transform-origin: 50%;
+  transition: transform 400ms;
+}
+.ham8 .bottom {
+  stroke-dasharray: 40 85;
+  transform-origin: 50%;
+  transition: transform 400ms, stroke-dashoffset 400ms;
+}
+.ham8.active .top {
+  stroke-dashoffset: -64px;
+}
+.ham8.active .middle {
+  /* stroke-dashoffset: -20px; */
+  transform: rotate(90deg);
+}
+.ham8.active .bottom {
+  stroke-dashoffset: -64px;
+}
