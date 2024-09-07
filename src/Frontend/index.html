@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html draggable="false">
 
 <head>
   <meta charset="UTF-8" />
@@ -12,6 +12,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
   <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+  <link rel="icon" href="./img/PeakkSolid.png">
+  <link rel="icon" type="image/x-icon" href="./img/PeakkSolid.png">
 </head>
 
 <body>
@@ -91,9 +93,8 @@
         <li><a href="#"><ion-icon name="person-sharp"></ion-icon>About This app</a></li>
         <li><a href="#"><ion-icon name="search-sharp"></ion-icon>Search Peakkofficial</a></li>
         <li><a href="#"><ion-icon name="help-sharp"></ion-icon>Send Idea Feedback</a></li>
-        <li><a href="#"><ion-icon name="backspace-sharp"></ion-icon>Bugs report</a></li>
+        <li><a href="#" id="LoginButton"><ion-icon name="keypad-sharp"></ion-icon>Login Peakkofficial</a></li>
         <li><a href="#"><ion-icon name="settings-sharp"></ion-icon>Settings</a></li>
-        <li><a href="#"><ion-icon name="language-sharp"></ion-icon>Languages</a></li>
         <li><a href="#" id="CloseApps"><ion-icon name="close-sharp"></ion-icon>Exit This app</a></li>
       </div>
     </div>
@@ -101,7 +102,7 @@
 
   <div class="toggleSbar" id="ToggleSidebar" type="change">
     <div class="toggleSbarCon">
-      <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="45" onclick="this.classList.toggle('active')">
+      <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="38" onclick="this.classList.toggle('active')">
         <path class="line top"
           d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
         <path class="line middle" d="m 30,50 h 40" />
@@ -109,6 +110,14 @@
           d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
       </svg>
     </div>
+  </div>
+  
+  <!-- login button -->
+
+  <div class="loginButton">
+      <ul>
+        <li><a href="#">Login Peakkofficial</a></li>
+      </ul>
   </div>
 
   <script src="Javascript/renderer.js"></script>
