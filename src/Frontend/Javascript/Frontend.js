@@ -2,6 +2,8 @@ const ToggleSidebar = document.getElementById("ToggleSidebar");
 const Sidebar = document.getElementById("Sidebar")
 const Sidebarcontent = document.getElementById("SidebarCon");
 const BGBlur = document.getElementById("bgblur");
+const headercon = document.getElementById('Header');
+let isVisible = false;
 
 // Sidebar.style.transform = "translateX(0px)";
 
@@ -22,6 +24,16 @@ ToggleSidebar.addEventListener("click", () => {
     }, 440);
 })
 
+ToggleSidebar.addEventListener('click', () => {
+    isVisible = !isVisible;
+    if (isVisible) {
+        headercon.style.transform = "translateX(85px)";
+    } else {
+        headercon.style.transform = "translateX(0px)";
+        // Hide the element
+    }
+});
+
 // loading
 
 const logo = document.getElementById("TransparentLogo");
@@ -34,9 +46,6 @@ setTimeout(() => {
             Loading.style.display = "none";
         }, 300);
     }, 300);
-    if (Loading.style.display == "none") {
-        document.body.style.overflow = "auto"
-    }
 }, 600);
 
 

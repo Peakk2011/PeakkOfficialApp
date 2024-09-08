@@ -14,6 +14,7 @@
   <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
   <link rel="icon" href="./img/PeakkSolid.png">
   <link rel="icon" type="image/x-icon" href="./img/PeakkSolid.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -85,14 +86,12 @@
         <p class="win-title">Peakkofficial</p>
       </div>
       <div class="sidebarlink">
-        <li><a href="#" id="ActiveNavbar"><ion-icon name="bag-handle-sharp"></ion-icon>Peakk store</a></li>
+        <div>
+          <li><a href="#" id="ActiveNavbar"><ion-icon name="bag-handle-sharp"></ion-icon>Peakk store</a></li>
+        </div>
         <li><a href="#"><ion-icon name="list-sharp"></ion-icon>Templates</a></li>
         <li><a href="#"><ion-icon name="information-sharp"></ion-icon>About Peakkofficial</a></li>
-        <li><a href="#"><ion-icon name="document-text-sharp"></ion-icon>Portfolio</a></li>
         <li><a href="#"><ion-icon name="send-sharp"></ion-icon>Contact Peakkofficial</a></li>
-        <li><a href="#"><ion-icon name="person-sharp"></ion-icon>About This app</a></li>
-        <li><a href="#"><ion-icon name="search-sharp"></ion-icon>Search Peakkofficial</a></li>
-        <li><a href="#"><ion-icon name="help-sharp"></ion-icon>Send Idea Feedback</a></li>
         <li><a href="#" id="LoginButton"><ion-icon name="keypad-sharp"></ion-icon>Login Peakkofficial</a></li>
         <li><a href="#"><ion-icon name="settings-sharp"></ion-icon>Settings</a></li>
         <li><a href="#" id="CloseApps"><ion-icon name="close-sharp"></ion-icon>Exit This app</a></li>
@@ -111,17 +110,55 @@
       </svg>
     </div>
   </div>
-  
+
   <!-- login button -->
 
   <div class="loginButton">
-      <ul>
-        <li><a href="#">Login Peakkofficial</a></li>
-      </ul>
+    <ul>
+      <li><a href="#">Login Peakkofficial</a></li>
+    </ul>
   </div>
+
+  <!-- Search -->
+
+  <div class="searchbox">
+    <div class="searchcon">
+      <div id="search-wrapper">
+        <ion-icon name="search-sharp"></ion-icon>
+        <input type="text" id="search" placeholder="Search...">
+        <button id="search-button">Enter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content -->
+
+  <header>
+    <div class="headercon" id="Header">
+      <div class="headertext">
+        <h1>GET STARTED</h1>
+        <hr>
+        <h2>Get started with<br>PeakkOfficial</h2>
+        <p>Let you all know about this app.</p>
+        <div class="headerimage">
+          <img src="./img/HowToStartWIdeFrame.svg" alt="">
+        </div>
+      </div>
+      <div class="headertext">
+        <h1>SUGGESSED</h1>
+        <hr>
+        <h2>Let's know<br>about interface</h2>
+        <p>Let's you all know about app look like.</p>
+        <div class="headerimage">
+          <img src="./img/Wideframe.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </header>
 
   <script src="Javascript/renderer.js"></script>
   <script src="Javascript/Frontend.js"></script>
+  <script src="Javascript/OnHover.js"></script>
 </body>
 
 </html>

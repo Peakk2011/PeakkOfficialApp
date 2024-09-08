@@ -23,8 +23,8 @@ const createWindow = () => {
     titleBarOverlay: {
       color: '#101011',
       symbolColor: '#fff',
-      height: 50,
-      width: 50,
+      height: 60,
+      width: 60,
     },
     icon: __dirname + './img/PeakkSolid.png',
     webPreferences: {

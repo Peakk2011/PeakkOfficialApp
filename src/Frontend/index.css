@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+@font-face {
+  font-family: SFPRO;
+  src: url(SF-Pro-Display-Semibold.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   transition: all 0.7s cubic-bezier(0.23, 1, 0.320, 1);
-  scroll-behavior: smooth;
-  -webkit-tap-highlight-color: transparent;
-  text-rendering: antialiased;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
@@ -59,8 +59,6 @@ html,
 body {
   background-color: rgb(16, 16, 17);
   backdrop-filter: blur(20px);
-  /* width: 100%; */
-  /* height: 100dvh; */
 }
 
 :where(li, a) {
@@ -90,7 +88,7 @@ body {
 
 .sidebar {
   width: 280px;
-  height: 100dvh;
+  height: 100vh;
   position: fixed;
   background-color: #0a0a0a;
   border-right: solid 1px #262626;
@@ -106,7 +104,7 @@ body {
 
 .sidebarcontent {
   /* margin-top: 4rem; */
-  max-width: 245px;
+  max-width: 237px;
   margin-left: auto;
   margin-right: auto;
   transform: translateX(-100px);
@@ -121,8 +119,8 @@ body {
 }
 
 .Windowstitle {
-  margin: 1rem 0px;
-  margin-bottom: 2rem;
+  margin: 1.25rem 0px;
+  margin-bottom: 2.25rem;
 }
 
 .icon {
@@ -137,54 +135,73 @@ body {
 
 .win-title {
   font-family: "Inter", sans-serif;
+  font-weight: 360;
   font-size: 20px;
   display: inline-block;
   margin: 0;
   margin-top: 14px;
-  transform: translateX(-6px);
-  color: #fff;
+  transform: translateX(-8px);
+  color: #ffffe9;
   user-select: none;
 }
 
 .sidebarlink li a {
-  color: #fff;
+  color: #C2C2C2;
   padding: 0.65rem 1rem;
   display: block;
   width: 100%;
   border-radius: 4px;
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.7rem;
+  transition: all 0.3s;
 }
 
 .sidebarlink li a:hover {
-  background: #161616;
+  background: #ffffe9;
+  color: #000;
+  -webkit-text-stroke-width: 0.35px;
+  font-weight: 400;
 }
 
 .sidebarlink li a:focus {
-  background-color: #161616;
+  background: #ffffe9;
+  color: #000;
+  -webkit-text-stroke-width: 0.65px;
+  font-weight: 400;
 }
 
 #ActiveNavbar {
-  background: #161616;
+  background: #ffffe9;
   position: relative;
+  color: #000;
+  -webkit-text-stroke-width: 0.35px;
+}
+
+#ActiveNavbar ion-icon:hover {
+  color: #000;
+}
+
+#ActiveNavbar:hover {
+  color: #000;
+  background: #ffffe9;
 }
 
 .sidebarlink ion-icon {
   font-size: 18px;
   margin-right: 0.65rem;
   transform: translateY(3px);
-  color: #ffffe9;
+  color: #C2C2C2;
 }
 
 #ActiveNavbar ion-icon {
   font-size: 18px;
   margin-right: 0.65rem;
   transform: translateY(1.2px);
-  color: #ffffe9;
+  color: #000;
 }
 
-#ActiveNavbar::after {
+/* #ActiveNavbar::after {
   content: "";
-  background-color: #ffffe9;
+  background-color: #303031;
   width: 4px;
   height: 19px;
   border-radius: 20px;
@@ -192,13 +209,13 @@ body {
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
-}
+} */
 
 .toggleSbar {
   position: fixed;
   right: 137px;
   width: 50px;
-  height: 50px;
+  height: 60px;
   -webkit-app-region: no-drag;
 }
 
@@ -207,7 +224,8 @@ body {
 }
 
 .toggleSbarCon {
-  transform: translate(6.5px, 7px);
+  position: fixed;
+  transform: translate(6.5px, 11.6px);
 }
 
 /* hamburger Toggle */
@@ -220,6 +238,7 @@ body {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  position: fixed;
 }
 
 .hamRotate.active {
@@ -273,11 +292,11 @@ body {
   position: fixed;
   -webkit-app-region: no-drag;
   height: 50px;
-  right: 195px;
+  right: 200px;
 }
 
 .loginButton ul {
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
 }
 
 .loginButton ul li a {
